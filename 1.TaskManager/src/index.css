@@ -1,0 +1,22 @@
+.task-card {
+  background: var(--card-bg);
+  color: var(--text);
+  border: 1px solid #d1d5db;
+  border-left: 6px solid var(--accent);
+  padding: 20px;
+  border-radius: 12px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.2s;
+}
+
+.task-card.overdue {
+  border-left-color: #ef4444;
+  background: #ffe4e6;
+}
+
+[data-theme="dark"] .task-card.overdue {
+  background: #4b1c1c;
+}
